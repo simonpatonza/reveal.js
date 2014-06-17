@@ -1,0 +1,137 @@
+/**
+ * This is a simple green theme based on Open Box Software branding colors.
+ *
+ * This theme is Copyright (C) 2014 Simon Paton, MIT licensed.
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Muli:300,300italic);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Muli', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$mainColor: #fff;
+$headingFont: 'Muli', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headingColor: #fff;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #BCD727;
+$linkColor: #6a7917;
+$linkColorHover: darken( $linkColor, 20% );
+$selectionBackgroundColor: darken( $backgroundColor, 5% );
+$darkHeadingColor: #292929;
+$subHeadingColor: lighten( $darkHeadingColor, 25% );
+$navigationColor: lighten( $subHeadingColor, 20% );
+$navigationColorHover: darken( $navigationColor, 25% );
+$headerTitleColor: #ccc;
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+// Custom additions/overrides ------------------
+/*********************************************
+ * CUSTOM ADDITIONS/OVERRIDES
+ *********************************************/
+
+.reveal .header {
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: $headingColor;
+	padding: 4px;
+}
+
+.reveal .header .logo {
+	background: url('../../img/openbox-logo.png') 0 0 no-repeat; 
+	width: 148px; 
+	height: 45px; 
+	float: left;
+}
+
+.reveal .header .presentation-title {
+	margin: 5px auto 0 auto;
+	width: 50%;
+	text-align: center;
+	color: $headerTitleColor;
+}
+
+.reveal .copyright {
+	z-index: 9999;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial, sans-serif !important;
+}
+
+.reveal .copyright p {
+	width: 50%; margin: 10px auto;
+}
+
+.reveal .copyright.dark p {
+	color: $subHeadingColor;
+}
+
+.reveal > .slides > section.dark h1 {
+	color: $darkHeadingColor;
+}
+.reveal > .slides > section.dark,
+.reveal > .slides > section.dark h2,
+.reveal > .slides > section.dark h3,
+.reveal > .slides > section.dark h4,
+.reveal > .slides > section.dark h5,
+.reveal > .slides > section.dark h6 {
+	color: $subHeadingColor;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+	border-right-color: $navigationColor;
+}
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+	border-left-color: $navigationColor;
+}
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+	border-bottom-color: $navigationColor;
+}
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+	border-top-color: $navigationColor;
+}
+
+.reveal .controls div.navigate-left.enabled:hover {
+	border-right-color: $navigationColorHover;
+}
+
+.reveal .controls div.navigate-right.enabled:hover {
+	border-left-color: $navigationColorHover;
+}
+
+.reveal .controls div.navigate-up.enabled:hover {
+	border-bottom-color: $navigationColorHover;
+}
+
+.reveal .controls div.navigate-down.enabled:hover {
+	border-top-color: $navigationColorHover;
+}
+
+// ---------------------------------------------
