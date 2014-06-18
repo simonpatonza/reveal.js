@@ -21,8 +21,9 @@ $headingFont: 'Muli', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headingColor: #fff;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: #BCD727;
-$linkColor: #6a7917;
+$backgroundColor: darken( #BCD727, 17% );
+$backgroundRadialColor: darken( #BCD727, 8% );
+$linkColor: lighten( #6a7917, 40% );
 $linkColorHover: darken( $linkColor, 20% );
 $selectionBackgroundColor: darken( $backgroundColor, 5% );
 $darkHeadingColor: #292929;
@@ -31,6 +32,11 @@ $navigationColor: lighten( $subHeadingColor, 20% );
 $navigationColorHover: darken( $navigationColor, 25% );
 $headerTitleColor: #ccc;
 
+// Background generator
+@mixin bodyBackground() {
+	// @include radial-gradient( rgba(188,215,39,1), rgba(202,224,81,1) );
+	@include radial-gradient( $backgroundColor, $backgroundRadialColor )
+}
 
 // Theme template ------------------------------
 @import "../template/theme";
@@ -40,6 +46,9 @@ $headerTitleColor: #ccc;
 /*********************************************
  * CUSTOM ADDITIONS/OVERRIDES
  *********************************************/
+.reveal pre code {
+	padding: 10px !important;
+}
 
 .reveal .header {
 	z-index: 9999;
