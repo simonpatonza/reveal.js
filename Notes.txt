@@ -1,0 +1,27 @@
+BA Training
+- Web and Security frameworks (Mike B.) - 15mins
+- SOA Presentation (Simon P.) - 15mins
+
+SOA
+How can/should we apply it in the context of our application design?
+
+---
+SOA is not...
+Limited to web services
+The end goal
+
+SOA is...
+Loosely coupled
+Application agnostic
+For a specific purpose
+Self-contained
+A reusable business process
+
+Considerations for SOA approach
+Longevity - will it be reusable for long?
+Performance
+Asynchronous - shouldn't lock
+Time/Productivity
+Legacy - don't just build SOA on top of it
+Security - more exposed to attack
+---
