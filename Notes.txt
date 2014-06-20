@@ -24,4 +24,16 @@ Asynchronous - shouldn't lock
 Time/Productivity
 Legacy - don't just build SOA on top of it
 Security - more exposed to attack
+
+"Business Service Bus" - concept by CBDI (http://everware-cbdi.com/)
+What is this, and how does it apply to you?
+Logical view of the available and used services for a particular business domain
+This guides developers to the set of services available for (their domain)/(the domain they're working on)
+Services on this bus should have the same common specifications, policies, etc
+Eg: standards, security policies
+
+Open Box SOA
+Email Service (intially from TS-CDT, but was used in OM/LDG)
+ACS (SAM)
+- custom Security Provider required (based off common template)
 ---
