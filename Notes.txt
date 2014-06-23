@@ -1,5 +1,5 @@
 BA Training
-- Web and Security frameworks (Mike B.) - 15mins
+- Web and Security frameworks (Simon P.) - 15mins
 - SOA Presentation (Simon P.) - 15mins
 
 SOA
@@ -37,7 +37,7 @@ Not as reusable
 Architecture Layers
 Application
 Service
-Components - Mike B.'s presentation
+Components - Web and Security frameworks presentation
 
 "Business Service Bus" - concept by CBDI (http://everware-cbdi.com/)
 What is this, and how does it apply to you?
@@ -50,4 +50,5 @@ Open Box SOA
 Email Service (originally from TS-CDT, but was used in OM/LDG)
 ACS (SAM)
 - custom Security Provider required (based off common template)
+SecurityProviders - Assemblies-Framework
 ---
