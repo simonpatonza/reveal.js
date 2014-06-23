@@ -210,7 +210,7 @@ body {
   color: dimgray;
 }
 
-.reveal > .slides > section.dark h1 {
+.reveal .slides section.dark h1 {
   color: #292929;
 }
 
