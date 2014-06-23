@@ -1,0 +1,15 @@
+BA Training
+- Web and Security frameworks (Mike B.) - 15mins
+- SOA Presentation (Simon P.) - 15mins
+
+Web
+- framework – what it is and what it is not
+- What is this front end / JavaScript driven framework stuff people talk about
+- The security framework
+
+The framework interests analysts mostly from the perspective of a) when we are planning, how much does the framework actually do that does not need further custom coding? And b) what features are built into it (i.e. automatic benefit that is passed on to client)
+
+
+---
+
+---
