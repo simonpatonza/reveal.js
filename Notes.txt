@@ -25,10 +25,24 @@ Time/Productivity
 Legacy - don't just build SOA on top of it
 Security - more exposed to attack
 
+Not using SOA approach
+Going direct
+Upsides
+Possibly less time & cost of creating SOA
+Skills required in developing SOA
+Downsides
+Is particular to an application
+Not as reusable
+
+Architecture Layers
+Application
+Service
+Components - Mike B.'s presentation
+
 "Business Service Bus" - concept by CBDI (http://everware-cbdi.com/)
 What is this, and how does it apply to you?
 Logical view of the available and used services for a particular business domain
-This guides developers to the set of services available for (their domain)/(the domain they're working on)
+This guides developers to a set of appropriate services available
 Services on this bus should have the same common specifications, policies, etc
 Eg: standards, security policies
 
