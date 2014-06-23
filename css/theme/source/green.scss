@@ -92,15 +92,15 @@ $headerTitleColor: #ccc;
 	color: $subHeadingColor;
 }
 
-.reveal > .slides > section.dark h1 {
+.reveal .slides section.dark h1 {
 	color: $darkHeadingColor;
 }
-.reveal > .slides > section.dark,
-.reveal > .slides > section.dark h2,
-.reveal > .slides > section.dark h3,
-.reveal > .slides > section.dark h4,
-.reveal > .slides > section.dark h5,
-.reveal > .slides > section.dark h6 {
+.reveal .slides section.dark,
+.reveal .slides section.dark h2,
+.reveal .slides section.dark h3,
+.reveal .slides section.dark h4,
+.reveal .slides section.dark h5,
+.reveal .slides section.dark h6 {
 	color: $subHeadingColor;
 }
 
