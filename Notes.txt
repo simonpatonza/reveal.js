@@ -47,7 +47,7 @@ Services on this bus should have the same common specifications, policies, etc
 Eg: standards, security policies
 
 Open Box SOA
-Email Service (intially from TS-CDT, but was used in OM/LDG)
+Email Service (originally from TS-CDT, but was used in OM/LDG)
 ACS (SAM)
 - custom Security Provider required (based off common template)
 ---
