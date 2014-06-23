@@ -16,4 +16,15 @@ EFTemplate
 - MVP
 - UIBase
 - 
+
+Front-end/JavaScript driven frameworks
+- AngularJS
+- KnockOut
+- jQuery
+- Bootstrap
+
+Security Framework
+- Active Directory driven
+- WebForms only in OpenBox implementation
+- time required for creating a WebForms implementation for a client
 ---
