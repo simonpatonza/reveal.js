@@ -11,5 +11,9 @@ The framework interests analysts mostly from the perspective of a) when we are p
 
 
 ---
-
+EFTemplate
+- Entity Framework
+- MVP
+- UIBase
+- 
 ---
