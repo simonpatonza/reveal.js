@@ -12,10 +12,25 @@ The framework interests analysts mostly from the perspective of a) when we are p
 
 ---
 EFTemplate
+- Base template for creating apps
+- Files and folders structure
+- No business logic
+
 - Entity Framework
+	- Version 6
+	- No setup of core data access libraries required
+	- Point to database and generate files
+	- However, does need wrappers to be created (covered in MVP section)
 - MVP
+	- Interface based, means different layers aren't tied together
+	- More testable code
 - UIBase
-- 
+	- Tishman Speyer
+	- Open Box
+- Unit/Integration Test template
+- Considerations
+	- time to rename project(s), files etc to new project name
+	- new client app would require styling/branding modifications
 
 Front-end/JavaScript driven frameworks
 - AngularJS
@@ -26,5 +41,7 @@ Front-end/JavaScript driven frameworks
 Security Framework
 - Active Directory driven
 - WebForms only in OpenBox implementation
-- time required for creating a WebForms implementation for a client
+- Considerations
+	- time required for creating a WebForms implementation for a client
+	- new implementation needed per new client (small overhead)
 ---
