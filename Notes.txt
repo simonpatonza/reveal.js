@@ -24,15 +24,17 @@ EFTemplate
 - MVP
 	- Interface based, means different layers aren't tied together
 	- More testable code
+	- Overhead: extra layers of abstraction
 - UIBase
 	- Tishman Speyer
 	- Open Box
-- Unit/Integration Test template
+- Unit/Integration Test template/examples
+
 - Considerations
 	- time to rename project(s), files etc to new project name
-	- new client app would require styling/branding modifications
+	- new client app would require styling/branding Front
 
-Front-end/JavaScript driven frameworks
+modifications-end/JavaScript driven frameworks
 - AngularJS
 - KnockOut
 - jQuery
