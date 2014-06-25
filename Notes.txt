@@ -32,9 +32,9 @@ EFTemplate
 
 - Considerations
 	- time to rename project(s), files etc to new project name
-	- new client app would require styling/branding Front
+	- new client app would require styling/branding modifications
 
-modifications-end/JavaScript driven frameworks
+- Front-end/JavaScript driven frameworks
 - AngularJS
 - KnockOut
 - jQuery
