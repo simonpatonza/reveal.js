@@ -230,23 +230,22 @@
 				]
 			});
 
-			var togglePresentationTitle = function(event) {
-        var hideTitleSlide = $(event.currentSlide).hasClass("hide-title");
-		    	$('.reveal #presentationTitle').toggle(hideTitleSlide == false);
-		    	if(hideTitleSlide) {
-		    		$('.reveal .copyright').addClass('dark');
-		    	}
-		    	else {
-		    		$('.reveal .copyright').removeClass('dark');
-		    	}
+			var togglePresentationTitle = function (event) {
+			    var hideTitleSlide = $(event.currentSlide).hasClass("hide-title");
+			    $('.reveal #presentationTitle').toggle(hideTitleSlide == false);
+			    if (hideTitleSlide) {
+			        $('.reveal .copyright').addClass('dark');
+			    } else {
+			        $('.reveal .copyright').removeClass('dark');
+			    }
 			}
 
-      Reveal.addEventListener('slidechanged', function(event) {
-        togglePresentationTitle(event);
-      });
-      Reveal.addEventListener('ready', function(event) {
-        togglePresentationTitle(event);
-      });
+			Reveal.addEventListener('slidechanged', function (event) {
+			    togglePresentationTitle(event);
+			});
+			Reveal.addEventListener('ready', function (event) {
+			    togglePresentationTitle(event);
+			});
 
 		</script>
 
