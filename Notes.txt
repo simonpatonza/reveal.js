@@ -28,6 +28,7 @@ EFTemplate
 - UIBase
 	- Tishman Speyer
 	- Open Box
+	- time required for rebranding
 - Unit/Integration Test template/examples
 
 - Considerations
@@ -39,6 +40,8 @@ EFTemplate
 - KnockOut
 - jQuery
 - Bootstrap
+- Considerations
+	- SEO not great for javascript sites
 
 Security Framework
 - Active Directory driven
