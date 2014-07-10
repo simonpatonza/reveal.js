@@ -55,15 +55,17 @@
 
                 <section>
                     <h2>Getting Started</h2>
-                    <p>HTML</p>
-                    <pre><code data-trim contenteditable style="font-size: 30px; margin-top: 20px;">
+                    <p>
+                        <pre><code data-trim contenteditable style="font-size: 30px; margin-top: 20px;">
 &lt;!DOCTYPE html&gt;
 &lt;html ng-app="myApp"&gt;
                     </code></pre>
-                    <p>JS</p>
+                </p>
+                <p>
                     <pre><code data-trim contenteditable style="font-size: 30px; margin-top: 20px;">
 var app = angular.module("myApp", []);
                     </code></pre>
+                </p>
 
                     <aside class="notes">
                         Notes here...
@@ -74,19 +76,21 @@ var app = angular.module("myApp", []);
                     <section>
                         <h2>Controllers and Scope</h2>
                         <h4>Scope</h4>
-                        <p>JS</p>
+                        <p>
                         <pre><code data-trim contenteditable style="font-size: 28px; margin-top: 20px;">
-    app.controller('MyController', ['$scope', 
-        function($scope) {
-            $scope.output = 'This is the output.';
-    ... 
+app.controller('MyController', ['$scope', 
+    function($scope) {
+        $scope.output = 'This is the output.';
+... 
                         </code></pre>
-                        <p>HTML</p>
+                        </p>
+                        <p>
                         <pre><code data-trim contenteditable style="font-size: 30px; margin-top: 20px;">
-    &lt;div ng-controller="MyController"&gt;
-      &lt;div>{{ output }}&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div ng-controller="MyController"&gt;
+  &lt;div>{{ output }}&lt;/div&gt;
+&lt;/div&gt;
                         </code></pre>
+                        </p>
 
                         <aside class="notes">
                             Notes here...
@@ -94,9 +98,111 @@ var app = angular.module("myApp", []);
                     </section>
 
                     <section>
-                          <h2>Controllers and Scope</h2>
-                          <h4>Aliases</h4>
+                        <h2>Controllers and Scope</h2>
+                        <h4>Aliases</h4>
+                        <p>
+<pre><code data-trim contenteditable style="font-size: 26px; margin-top: 20px; line-height: 1em">
+app.controller('MyController', function() {
+  $scope.output = 'This is the output.';
+  // note: this doesn't overwrite the above variable
+  this.output = 'This is another output.';
+...
+</code></pre>
+</p>
+<p>
+<pre><code data-trim contenteditable style="font-size: 26px; margin-top: 20px; line-height: 1em">
+&lt;div ng-controller="MyController"&gt;
+  &lt;div&gt;{{ output }}&lt;/div&gt;
+  &lt;div&gt;{{ alias.output }}&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</p>
                     </section>
+
+                    <section>
+                        <h2>Controllers and Scope</h2>
+                        <h4>Aliases continued...</h4>
+                        <div>This will not work</div>
+<p>
+<pre><code data-trim contenteditable style="font-size: 26px; margin-top: 20px; line-height: 1em">
+&lt;div ng-controller="MyController"&gt;
+  &lt;div&gt;{{ MyController.output }}&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>HTML Dropdowns, ngRepeat<br/>&amp; ngModel</h2>
+<p>When using a &lt;select&gt; you can populate the &lt;option&gt;'s in two ways</p>
+
+<pre><code data-trim contenteditable style="font-size: 22px; margin-top: 20px; line-height: 1em">
+&lt;select>
+  &lt;option ng-repeat="item in items">{{ item.text }}&lt;/option> 
+
+This will not work either...
+&lt;select ng-options="item in items">&lt;/select>
+
+This will
+&lt;select ng-model="selectedItem" ng-options="item in items">
+&lt;/select>
+</code></pre>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Directives, Views &amp; Routing</h2>
+                        <h4>Directives</h4>
+<p class="fragment visible roll-in">Snippets of HTML used to 
+perform actions and/or transformations 
+on the DOM</p>
+
+<p class="fragment visible roll-in">Built in directives used
+<span style="font-weight: bold; color: #e06666">ng-app ng-controller ng-repeat ng-options ng-model</span>...</p>
+
+<p class="fragment visible roll-in">You can create <span style="font-weight: bold; color: #63a44d">custom</span> directives</p>
+                    </section>
+
+                    <section>
+                        <h2>Directives, Views &amp; Routing</h2>
+<h4>Implementing a view</h4>
+<quote>"There can be only one"</quote>
+<p>
+<pre><code data-trim contenteditable style="font-size: 22px; margin-top: 20px; line-height: 1em">
+...
+&lt;div ng-view>&lt;/div>
+...
+</code></pre>
+</p>
+<p>
+<pre><code data-trim contenteditable style="font-size: 22px; margin-top: 20px; line-height: 1em">
+app.module('myApp', ['ngRoute']);
+...
+app.config(function($routeProvider, $locationProvider) {
+  $routeProvider
+    .when('/', {
+      templateUrl: 'list.html',
+      controller: 'ListController'
+    })
+</code></pre>
+</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Now, try it out for yourself</h2>
+
+<p>Useful links</p>
+<ul>
+    <li><a href="https://docs.angularjs.org/api" target="_blank">https://docs.angularjs.org/api</a></li>
+    <li><a href="http://plnkr.co/" target="_blank">http://plnkr.co/</a></li>
+    <li><a href="http://jsfiddle.net/" target="_blank">http://jsfiddle.net/</a></li>
+    <li><a href="http://blog.angularjs.org/" target="_blank">http://blog.angularjs.org/</a></li>
+    <li><a href="http://www.cheatography.com/proloser/cheat-sheets/angularjs/" target="_blank">http://www.cheatography.com/proloser/cheat-sheets/angularjs/</a></li>
+    <li><a href="http://weblogs.asp.net/dwahlin/structuring-angularjs-code" target="_blank">http://weblogs.asp.net/dwahlin/structuring-angularjs-code</a></li>
+    <li><a href="http://weblogs.asp.net/dwahlin/creating-custom-angularjs-directives-part-i-the-fundamentals" target="_blank">http://weblogs.asp.net/dwahlin/creating-custom-angularjs-directives-part-i-the-fundamentals</a></li>
+</ul>
                 </section>
             </div>
 
