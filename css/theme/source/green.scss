@@ -21,8 +21,9 @@ $headingFont: 'Muli', Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headingColor: #fff;
 $headingTextShadow: none;
 $headingTextTransform: none;
-$backgroundColor: darken( #BCD727, 17% );
-$backgroundRadialColor: darken( #BCD727, 8% );
+$heading1TextShadow: 0px 0px 10px rgba(0,0,0,0.4);
+$backgroundColor: darken( #BCD727, 8%);
+$backgroundRadialColor: #BCD727;
 $linkColor: lighten( #6a7917, 40% );
 $linkColorHover: darken( $linkColor, 20% );
 $selectionBackgroundColor: darken( $backgroundColor, 5% );
@@ -91,15 +92,15 @@ $headerTitleColor: #ccc;
 	color: $subHeadingColor;
 }
 
-.reveal > .slides > section.dark h1 {
+.reveal .slides section.dark h1 {
 	color: $darkHeadingColor;
 }
-.reveal > .slides > section.dark,
-.reveal > .slides > section.dark h2,
-.reveal > .slides > section.dark h3,
-.reveal > .slides > section.dark h4,
-.reveal > .slides > section.dark h5,
-.reveal > .slides > section.dark h6 {
+.reveal .slides section.dark,
+.reveal .slides section.dark h2,
+.reveal .slides section.dark h3,
+.reveal .slides section.dark h4,
+.reveal .slides section.dark h5,
+.reveal .slides section.dark h6 {
 	color: $subHeadingColor;
 }
 
